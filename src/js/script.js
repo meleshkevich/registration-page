@@ -19,8 +19,6 @@ const fetchEventList = async () => {
   data.forEach((el) => {
     const newEvent = new Event(el.name);
   });
-
-  const newEvent = new Event(data[0].name);
 };
 
 fetchEventList();
