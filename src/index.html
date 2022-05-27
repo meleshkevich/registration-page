@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js"></script>
     <title>Registration page</title>
     <script src="js/script.js" defer></script>
   </head>
@@ -36,7 +35,7 @@
 
     <div class="form__container">
       <div class="form__element">
-        <form>
+        <form action="https://test-api.codingbootcamp.cz/api/5c0eb69c/events/1/registrations" method="post" >
           <label for="name">Name:</label>
           <input type="text" name="name" id="name" />
 
@@ -55,7 +54,7 @@
             <p><input type="radio" name="age">NO</input></p>
         </div>
 
-            <div class="button__container"><button type="submit">SUBMIT</button><br>
+            <div class="button__container"><button class="button__register" name="register" type="submit" value="register">SUBMIT</button><br>
             <button type="submit">CANCEL</button>
             </div>
 

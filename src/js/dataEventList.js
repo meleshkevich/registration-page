@@ -35,6 +35,13 @@ const postRegistration = async() => {
   console.log(myUsableResponse)
 }
 
+const registerBtn = document.querySelector(".button__register")
+registerBtn.addEventListener("click", sendRegistration)
+
+const sendRegistration = () => {
+        
+}
+
 
 
 
