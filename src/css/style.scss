@@ -72,6 +72,7 @@ a {
     padding-bottom: 40px;
 }
 
+.description__container,
 .form__container{
     width: 80%;
     margin: auto;
@@ -98,4 +99,19 @@ form{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.description__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.description__image{
+    width: 100px;
+}
+
+.description__text,
+.description__image{
+    padding: 15px;
 }
