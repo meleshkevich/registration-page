@@ -1,6 +1,6 @@
-import { fetchEventList } from "./dataEventList";
+import { fetchEventList, postRegistration } from "./dataEventList";
 
 
 console.log("jkjkg") ///<<<<<<can be removed
 fetchEventList()
-
+postRegistration()
