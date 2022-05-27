@@ -8,6 +8,7 @@ class Event {
   createEvent = () => {
     const container__bottom = document.querySelector(".container__bottom");
     const newEvent = document.createElement("div");
+    newEvent.setAttribute("class", "box")
     newEvent.innerHTML = `
      <div class="event1">${this.data.name}</div>`;
     container__bottom.appendChild(newEvent);
