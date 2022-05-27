@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
     <title>Registration page</title>
     <script src="js/script.js" defer></script>
   </head>
@@ -32,5 +33,41 @@
         <div class="event6">Event 6</div> -->
       </div>
     </main>
+
+    <div class="form__container">
+      <div class="form__element">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="surname">Surname:</label>
+          <input type="text" name="surname" id="surname" />
+
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="phone">Phone Number:</label>
+          <input type="phone" name="phone" id="phone" /><br /><br />
+
+          <label for="age_radio">I'm old enough to participate.</label>
+          <div class="age_radio_buttons">
+            <p><input type="radio" name="age">YES</input></p>
+            <p><input type="radio" name="age">NO</input></p>
+        </div>
+
+            <div class="button__container"><button type="submit">SUBMIT</button><br>
+            <button type="submit">CANCEL</button>
+            </div>
+
+        </form>
+      </div>
+    </div>
   </body>
 </html>
+
+<!-- 
+  <label for="yes_no_radio">Do you agree to the terms?</label>
+<p><input type="radio" name="yes_no" checked>Yes</input></p>
+<p>
+<input type="radio" name="yes_no">No</input>
+</p> -->
