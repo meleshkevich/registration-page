@@ -9,7 +9,8 @@ class Event {
     const container__bottom = document.querySelector(".container__bottom");
     const newEvent = document.createElement("div");
     newEvent.innerHTML = `
-     <div class="event1">${this.name}</div>`;
+     <div class="event1">${this.name}</div>
+     <button class='event-btn'>See more</button>`;
 
     //get event data from API and use for  instance
     container__bottom.appendChild(newEvent);
