@@ -1,5 +1,5 @@
 
-import { fetchEventList } from "./dataEventList";
+// import { fetchEventList } from "./dataEventList";
 
 
 // import { fetchEventList } from "./dataEventList";
@@ -15,11 +15,10 @@ const fetchEventList_featured = async () => {
   const newFeatured = new FeatureEvent(data[0].name);
 };
 
-
 fetchEventList_featured();
 
-console.log("jkjkg") ///<<<<<<can be removed
-fetchEventList()
+
+
 
 const fetchEventList = async () => {
   const response = await fetch(url_events);
@@ -31,5 +30,4 @@ const fetchEventList = async () => {
 
   const newEvent = new Event(data[0].name);
 };
-
-fetchEventList();
+fetchEventList()
