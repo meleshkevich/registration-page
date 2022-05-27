@@ -11,7 +11,7 @@ class FeatureEvent {
     <img class='event-img' alt='some image' src='${this.data[0].image_url}'>
     <h1 class="main__event">${this.data[0].name}</h2>
     <p class='main__event_description'>${this.data[0].description}</p>
-    <button>Register</button>`;
+    <button id="myBtn">Register</button>`;
 
     //get event data from API and use for  instance
     container__top.appendChild(newFeaturedEvent);

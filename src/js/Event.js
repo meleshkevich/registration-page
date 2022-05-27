@@ -14,6 +14,9 @@ class Event {
 
     //get event data from API and use for  instance
     container__bottom.appendChild(newEvent);
+
+    
+
   };
 }
 
