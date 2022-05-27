@@ -1,5 +1,6 @@
-import { fetchEventList } from "./Events";
+import { fetchEventList } from "./dataEventList";
 
 
 console.log("jkjkg")
 fetchEventList()
+
