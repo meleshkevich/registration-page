@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    color: green;
+}
+
+body{
+    width: 100vw;
+}
+.header,
+.div__container{
+    width: 80%;
+    border: green solid 3px;
+    margin: auto;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.header__title{
+    margin: 10px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+a{
+    margin: 10px;
+}
+
+.container__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container__bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.event1, 
+.event2, 
+.event3, 
+.event4, 
+.event5, 
+.event6{
+    border: 3px green solid;
+    width: 27%;
+    margin: 10px auto;
+    padding-bottom: 40px;
+}
