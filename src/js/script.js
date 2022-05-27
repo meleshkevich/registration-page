@@ -1,6 +1,6 @@
 import { fetchEventList } from "./dataEventList";
 
 
-console.log("jkjkg")
+console.log("jkjkg") ///<<<<<<can be removed
 fetchEventList()
 
