@@ -1,18 +1,16 @@
 class FeatureEvent {
-  constructor(testFeatured) {
-    this.testFeatured = testFeatured;
-    createFeaturedEvent();
+  constructor(name) {
+    this.name = name;
+    this.createFeaturedEvent();
   }
   createFeaturedEvent = () => {
-    const body = document.querySelector("body");
+    const container__top = document.querySelector(".container__top");
     const newFeaturedEvent = document.createElement("div");
-    newFeaturedEvent.setAttribute("class", "event-featured");
+    newFeaturedEvent.innerHTML = `
+    <h1 class="main__event">${this.name}</h1>`;
 
     //get event data from API and use for  instance
-    body.appendChild(newFeaturedEvent);
-
-    //console.log to test data flow
-    console.log(this.testFeatured);
+    container__top.appendChild(newFeaturedEvent);
   };
 }
 
