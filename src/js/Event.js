@@ -16,8 +16,8 @@ class Event {
     see_btn.setAttribute("id", `${this.data.id}`);
 
     see_btn.innerHTML = "See more";
-    see_btn.addEventListener("click", (e) => {});
-    container__bottom.appendChild(see_btn);
+
+    newEvent.appendChild(see_btn);
   };
 }
 
