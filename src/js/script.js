@@ -1,8 +1,3 @@
-
-// import { fetchEventList } from "./dataEventList";
-
-
-// import { fetchEventList } from "./dataEventList";
 import FeatureEvent from "./FeatureEvent";
 import Event from "./Event";
 
