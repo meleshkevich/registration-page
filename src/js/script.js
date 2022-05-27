@@ -16,11 +16,12 @@ fetchEventList_featured();
 const fetchEventList = async () => {
   const response = await fetch(url_events);
   const data = await response.json();
+  console.log(data);
   data.forEach((el) => {
     const newEvent = new Event(el.name);
   });
 
-  const newEvent = new Event(data[0].name);
+ 
 };
 
 fetchEventList();

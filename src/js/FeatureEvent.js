@@ -15,7 +15,7 @@ class FeatureEvent {
 
     //get event data from API and use for  instance
     container__top.appendChild(newFeaturedEvent);
-    console.log(this.data[0].name);
+    
   };
 }
 
