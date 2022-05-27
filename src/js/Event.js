@@ -1,19 +1,19 @@
 class Event {
-  constructor(eventData) {
-    this.eventData = eventData;
+  constructor(name) {
+    this.name = name;
 
     this.createEvent();
   }
+  // create new instance of Ivent with data from API
   createEvent = () => {
-    const body = document.querySelector("body");
+    const container__bottom = document.querySelector(".container__bottom");
     const newEvent = document.createElement("div");
-    newEvent.setAttribute("class", "event");
+    newEvent.innerHTML = `
+     <div class="event1">${this.name}</div>
+     <button class='event-btn'>See more</button>`;
 
     //get event data from API and use for  instance
-    body.appendChild(newEvent);
-
-    //console.log to test data flow
-    console.log(this.eventData);
+    container__bottom.appendChild(newEvent);
   };
 }
 
