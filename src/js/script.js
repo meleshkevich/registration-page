@@ -1,4 +1,3 @@
-// import { fetchEventList } from "./dataEventList";
 import FeatureEvent from "./FeatureEvent";
 import Event from "./Event";
 import {} from "./Modal";
@@ -23,12 +22,8 @@ fetchEventList_featured();
 const fetchEventList = async () => {
   const response = await fetch(url_events);
   const data = await response.json();
-  console.log(data);
-  data.forEach((el) => {
-    const newEvent = new Event(el.name);
+  data.forEach((el, i) => {
+    const newEvent = new Event(data[i]);
   });
-
- 
 };
-
 fetchEventList();

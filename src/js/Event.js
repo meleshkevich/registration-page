@@ -1,6 +1,6 @@
 class Event {
-  constructor(name) {
-    this.name = name;
+  constructor(data) {
+    this.data = data;
 
     this.createEvent();
   }
@@ -9,14 +9,15 @@ class Event {
     const container__bottom = document.querySelector(".container__bottom");
     const newEvent = document.createElement("div");
     newEvent.innerHTML = `
-     <div class="event1">${this.name}</div>
-     <button class='event-btn'>See more</button>`;
-
-    //get event data from API and use for  instance
+     <div class="event1">${this.data.name}</div>`;
     container__bottom.appendChild(newEvent);
+    // create button with id = index from data array
+    const see_btn = document.createElement("button");
+    see_btn.setAttribute("id", `${this.data.id}`);
 
+    see_btn.innerHTML = "See more";
     
-
+    container__bottom.appendChild(see_btn);
   };
 }
 
