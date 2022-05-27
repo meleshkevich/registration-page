@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { fetchEventList } from "./dataEventList";
 import FeatureEvent from "./FeatureEvent";
 import Event from "./Event";
@@ -10,6 +11,8 @@ const fetchEventList_featured = async () => {
   const data = await response.json();
   const newFeatured = new FeatureEvent(data[0].name);
 };
+=======
+>>>>>>> main
 
 fetchEventList_featured();
 
